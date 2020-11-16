@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCard"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tvCARDA"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/bannercamarao" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNomeRest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tony Roma's"
+        android:textSize="26dp"
+        android:layout_marginBottom="65dp"
+        android:textAlignment="center"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvCARDA"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCARDA"
+        app:layout_constraintTop_toBottomOf="@id/ivCard"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_marginStart="19dp"
+        android:layout_height="wrap_content"
+        android:text="Pratos Principais"
+        android:textSize="26dp"
+        />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCardapio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvCARDA"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:itemCount="12"
+        tools:listitem="@layout/item_cardapio"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

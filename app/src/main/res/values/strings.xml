@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Desafio2SantanderCoders</string>
+    <string name="register">Register</string>
+    <string name="log_in">Log in</string>
+    <string name="email">Email</string>
+    <string name="or">Or</string>
+    <string name="password">Password</string>
+    <string name="tony_roma_s">Tony Roma\'s</string>
+</resources>
